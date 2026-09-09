@@ -15,18 +15,20 @@
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
         <p class="question">What happens to the layout? Does it still take up the full width?</p>
-
+        <p class="answer"><strong>Answer:</strong> No, it no longer takes up the full width. It only takes up the width of the text inside it.</p>
+        
         <h2>Task 2: Nesting Inline in Block</h2>
-        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
+        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span>here is some <strong>bold text</strong> and <em>italic text</em> flowing seamlessly in line. </p>
         <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
             how it flows within the line.</p>
 
         <h2>Task3: Nesting Block in Inline</h2>
         <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
             <p class="question">What error or layout issue do you see? Why does this happen?</p>
+          <p class="answer"><strong>Answer:</strong> This breaks HTML validation rules. A block element (like a div) cannot live inside an inline element (like a span). It breaks the visual flow and causes structural page rendering errors.</p>
 
 
             <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
