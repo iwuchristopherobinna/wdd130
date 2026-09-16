@@ -1,4 +1,4 @@
-/* FIX: Explicitly defined CSS variables in :root pseudo-class */
+
 :root {
   --primary-color: #000055; 
   --secondary-color: #f4a261; 
@@ -8,20 +8,21 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal selector reset (already marked correct, keeping intact) */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles using variables */
+
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  
 }
 
-/* Limit layout width and center grid blocks */
+
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -30,7 +31,10 @@ header, main, footer {
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  color: var(--secondary-color); 
 }
+
+
 
 header {
   background-color: var(--primary-color);
@@ -42,7 +46,7 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* FIX: .hero container must have position: relative */
+
 .hero {
   position: relative;
 }
@@ -53,7 +57,7 @@ nav, p, section, article {
   height: auto;
 }
 
-/* FIX: h1 inside the hero container must have position: absolute */
+
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -65,7 +69,7 @@ nav, p, section, article {
   color: #ffffff; 
 }
 
-/* FIX: .hero article child element must have position: absolute to overlay image */
+
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -75,19 +79,19 @@ nav, p, section, article {
   padding: 15px;
 }
 
-/* FIX: The image inside .hero article must have float: right */
+
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 15px;
 }
 
-/* FIX: Explicit rule for .socialmedia a to remove underlines from social media links */
+
 .socialmedia a {
   text-decoration: none;
 }
 
-/* Keep social media image layout clean */
+
 .socialmedia img {
   width: 32px;
   height: 32px;
