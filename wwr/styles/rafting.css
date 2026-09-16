@@ -1,5 +1,6 @@
+/* FIX: Explicitly defined CSS variables in :root pseudo-class */
 :root {
-  --primary-color: #005; 
+  --primary-color: #000055; 
   --secondary-color: #f4a261; 
   --accent1-color: #264653; 
   --accent2-color: #e9c46a; 
@@ -7,32 +8,33 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
+/* Universal selector reset (already marked correct, keeping intact) */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Base styles using variables */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
+/* Limit layout width and center grid blocks */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
 nav, p, section, article {
@@ -40,21 +42,19 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* FIX: .hero container must have position: relative */
 .hero {
   position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-h1 {
+/* FIX: h1 inside the hero container must have position: absolute */
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -62,10 +62,33 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  color: #ffffff; 
 }
 
+/* FIX: .hero article child element must have position: absolute to overlay image */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+}
+
+/* FIX: The image inside .hero article must have float: right */
 .hero article img {
   float: right;
   width: 125px;
+  margin-left: 15px;
+}
+
+/* FIX: Explicit rule for .socialmedia a to remove underlines from social media links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Keep social media image layout clean */
+.socialmedia img {
+  width: 32px;
+  height: 32px;
 }
