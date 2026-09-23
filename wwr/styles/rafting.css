@@ -98,7 +98,6 @@ nav, p, section, article {
 }
 
 
-/* --- Base Styles --- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -111,24 +110,24 @@ img {
   display: block;
 }
 
-/* --- Header Layout (CSS Grid) --- */
+
 header {
   display: grid;
-  grid-template-columns: auto 1fr; /* Logo takes natural space, Nav takes the rest */
-  align-items: center;            /* Vertically centers logo and nav elements */
+  grid-template-columns: auto 1fr; 
+  align-items: center;            
   padding: 10px 20px;
   background-color: #f8f9fa;
 }
 
 .logo img {
-  max-height: 100px; /* Adjust size based on your logo design */
+  max-height: 100px; 
 }
 
-/* --- Navigation Layout (CSS Flex) --- */
+
 header nav {
   display: flex;
-  justify-content: flex-end;     /* Pushes navigation links to the far right */
-  gap: 20px;                     /* Spacing between the navigation items */
+  justify-content: flex-end;
+  gap: 20px;                     
 }
 
 header nav a {
@@ -137,19 +136,17 @@ header nav a {
   font-weight: bold;
 }
 
-/* --- History Section Layout --- */
 .history-content {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns for text and image */
+  grid-template-columns: 1fr 1fr; 
   gap: 30px;
   align-items: center;
   padding: 20px;
 }
 
-/* --- Adventures Gallery Layout (5 Columns) --- */
 .adventure-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns horizontally */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 15px;
   padding: 20px;
 }
@@ -168,10 +165,9 @@ header nav a {
   font-size: 0.9rem;
 }
 
-/* --- Footer Layout (CSS Flex) --- */
 footer {
   display: flex;
-  justify-content: space-between; /* Copyright on left, socials on right */
+  justify-content: space-between; 
   align-items: center;
   padding: 20px;
   background-color: #333;
@@ -180,11 +176,11 @@ footer {
 
 footer .socials {
   display: flex;
-  gap: 15px;                      /* Spaces out social icons horizontally */
+  gap: 15px;                      
 }
 
 footer .socials img {
-  width: 24px;                    /* Restricts icon sizes uniformally */
+  width: 24px;                    
   height: 24px;
 }
 
