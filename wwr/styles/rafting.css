@@ -223,7 +223,7 @@ footer .socials img {
   border-radius: 4px;
 }
 
-/* Contact Form Styling */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -249,7 +249,7 @@ footer .socials img {
   border-radius: 4px;
 }
 
-/* Radio Group Alignment */
+
 .radio-group {
   border: none;
   padding: 0;
@@ -279,7 +279,7 @@ footer .socials img {
   border: 0;
 }
 
-/* Checkbox Row */
+
 .checkbox-row {
   display: flex;
   align-items: center;
@@ -287,7 +287,7 @@ footer .socials img {
   margin-top: 0.5rem;
 }
 
-/* Wireframe Button */
+
 .submit-btn {
   width: 100%;
   padding: 0.6rem;
