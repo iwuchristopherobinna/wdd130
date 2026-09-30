@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>White Water Rafting | Contact Us</title>
-  
+  <meta name="description" content="Contact White Water Rafting to ask questions, view our location, meet our team, or send reservation inquiries.">
+  <meta name="author" content="Your Name">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
 
   <header>
     <img src="images/splash.png" alt="Splash Water Rafting Logo" class="logo">
-    <nav>
-      <a href="./">Home</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a class="current" href="contact.html">Contact Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
     </nav>
   </header>
 
-  <main class="contact-main">
-    <h1>Contact Us</h1>
+  <main class="contact-grid">
+    
+    <section class="company-heading">
+      <h1>White Water Rafting </h1>
+      <p class="address">Km 44 Owerri Okigwe rd<br>Owerri, Imo State<br>08038934935<br>obinnachristopher147@gmail.com</p>
+    </section>
 
     
-    <h2>Send Us a Message</h2>
-  <p>White Water Rafting</p>
-  <p>Phone: 08038934935 | 09019642492</p>
-  <p> Email: <a href="">obinnichristopher147@gmail.com</a></p>
-      
-  <div class="map-container">
-        
-     <iframe 
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127095.
-         53723694787!2d7.013465101442853!3d5.457048996235421!2m3!1f0!2f0!3f0
-         !3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259902057e70b%3A0x7ef9c9b64bc71467!2sDREAM%20WORLD%20AMUSEMENT%20PARK!
-         5e0!3m2!1sen!2sng!4v1790765150998!5m2!1sen!2sng" width="600" height="450" style="border:0;
-         " allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-      </div>
-    </section>
+    <div class="map-form-container">
 
-    <!-- Employee Profiles Section -->
-    <section class="team-profiles">
-      <h2>Our Team</h2>
+      <section class="map-section">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127095.53723694787!2d7.013465101442853!3d5.457048996235421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259902057e70b%3A0x7ef9c9b64bc71467!2sDREAM%20WORLD%20AMUSEMENT%20PARK!5e0!3m2!1sen!2sng!4v1790765150998!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" 
+          width="100%" 
+          height="100%" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          title="White Water Rafting Location Map">
+        </iframe>
+      </section>
+
+      
+      <section class="form-section">
+        <form action="#" method="post" class="contact-form">
+          
+          <div class="form-row">
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-row">
+            <label for="useremail">Email</label>
+            <input type="email" id="useremail" name="useremail" placeholder="johndoe@ng.com" required>
+          </div>
+
+          <fieldset class="radio-group">
+            <legend class="sr-only">Message Purpose</legend>
+            <div class="radio-label">Message Purpose</div>
+            <div class="radio-options">
+              <label><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
+              <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+              <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type here" required></textarea>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Please Subscribe me to the monthyly newsletter</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Get in Touch!</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Employee Section -->
+    <section class="team-section">
+      <h2>We Are Here to Serve You</h2>
       <div class="employee-grid">
         <figure>
-          <img src="images/employee1.jpg" alt="Sarah Connor">
-          <figcaption>Mark Stephen<br>Reservations Manager</figcaption>
+          <img src="images/employee1.jpg" alt="Employee Profile">
+          <figcaption>Reservations Manager</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Mark River">
-          <figcaption>Emily Joey<br>Lead River Guide</figcaption>
+          <img src="images/employee2.jpg" alt="Employee Profile">
+          <figcaption>River team lead</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Elena Vance">
-          <figcaption>Elena Vance<br>Safety Coordinator</figcaption>
+          <img src="images/employee3.jpg" alt="Employee Profile">
+          <figcaption>Safety Cordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee4.jpg" alt="Employee Profile">
+          <figcaption>Safety Cordinator</figcaption>
         </figure>
       </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post" class="contact-form">
-        
-        <div class="form-item">
-          <label for="username">Your Name:</label>
-          <input type="text" id="username" name="username" required>
-        </div>
-
-        <div class="form-item">
-          <label for="useremail">Your Email Address:</label>
-          <input type="email" id="useremail" name="useremail" required>
-        </div>
-
-        <fieldset class="form-item">
-          <legend>Purpose of Message:</legend>
-          <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-        </fieldset>
-
-        <div class="form-item">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <div class="form-item checkbox-item">
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-        </div>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
     </section>
   </main>
 
-  <!-- Keep existing site Footer here -->
   <footer>
-    <p>&copy; 2026 White Water Rafting | All Rights Reserved</p>
+    <p>© 2026 White Water Rafting | Your Name | All Rights Reserved</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com" target="_blank" rel="noopener">
+        <img src="images/facebook.svg" alt="Facebook Icon">
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">
+        <img src="images/linkedin.svg" alt="Twitter Icon">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">
+        <img src="images/instagram.svg" alt="Instagram Icon">
+      </a>
+    </nav>
   </footer>
+
 </body>
 </html>

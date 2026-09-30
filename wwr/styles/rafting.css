@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #000055; 
+  --primary-color: #C05800; 
   --secondary-color: #f4a261; 
   --accent1-color: #264653; 
   --accent2-color: #e9c46a; 
@@ -167,7 +167,7 @@ footer {
   justify-content: space-between; 
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #38240D;
   color: #fff;
 }
 
@@ -181,122 +181,164 @@ footer .socials img {
   height: 24px;
 }
 
-/* Contact Page Layout */
-.contact-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
+
+
+
+/* ===================================================
+   WIREFRAME MATCHING STYLES (contact.html)
+   =================================================== */
+
+/* Top Heading Section */
+.company-heading {
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
-.company-info {
-  display: flex;
-  flex-wrap: wrap;
+.company-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-heading .address {
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* 2-Column Map & Form Container */
+.map-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 2rem;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
 }
 
-.info-details, .map-container {
-  flex: 1 1 300px;
-}
-
-.map-container iframe {
+.map-section {
   width: 100%;
-  border: 1px solid #ccc;
+  min-height: 350px;
+}
+
+.map-section iframe {
+  border: 1px solid #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-row label {
+  font-weight: bold;
+}
+
+.form-row input, 
+.form-row textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #713600;
   border-radius: 4px;
 }
 
-/* Team Section */
-.team-profiles {
-  margin-bottom: 2.5rem;
+/* Radio Group Alignment */
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0.5rem;
+}
+
+.radio-label {
+  font-weight: bold;
+}
+
+.radio-options label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Checkbox Row */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Wireframe Button */
+.submit-btn {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #713600;
+  color: #f6f6f7;
+  border: 1px solid #f5eded;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #0b0f0d;
+}
+
+/* Employee Team Section Container */
+.team-section {
+  border: 1px solid #f8f7f7;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #FDFBD4;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.team-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .employee-grid {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .employee-grid figure {
   margin: 0;
-  text-align: center;
 }
 
 .employee-grid img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
+  background-color: #ccc;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #005f73;
 }
 
-.employee-grid figcaption {
-  margin-top: 0.5rem;
+@media (max-width: 768px) {
+  .map-form-container {
+    grid-template-columns: 1fr;
+  }
 }
-
-/* Form Styles */
-.contact-form-section {
-  background-color: #f4f4f4;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.form-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.form-item input[type="text"],
-.form-item input[type="email"],
-.form-item textarea {
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-
-fieldset.form-item {
-  border: 1px solid #ccc;
-  padding: 0.8rem;
-  border-radius: 4px;
-}
-
-fieldset.form-item label {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.checkbox-item {
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Accessible & Visually Distinct Submit Button */
-.submit-btn {
-  background-color: #005f73;
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: background-color 0.2s ease;
-}
-
-.submit-btn:hover,
-.submit-btn:focus {
-  background-color: #0a9396;
-  outline: 2px solid #000;
-}
-
