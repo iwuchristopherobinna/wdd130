@@ -17,7 +17,7 @@
 
 
 body {
-  font-family: var(--body-font);
+  
   color: var(--accent1-color);
   font-family: Arial, sans-serif;
   margin: 0;
@@ -129,7 +129,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -184,11 +184,8 @@ footer .socials img {
 
 
 
-/* ===================================================
-   WIREFRAME MATCHING STYLES (contact.html)
-   =================================================== */
 
-/* Top Heading Section */
+
 .company-heading {
   text-align: center;
   margin: 1.5rem 0;
@@ -204,7 +201,7 @@ footer .socials img {
   font-weight: 600;
 }
 
-/* 2-Column Map & Form Container */
+
 .map-form-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,7 +216,7 @@ footer .socials img {
 }
 
 .map-section iframe {
-  border: 1px solid #f7f7f7;
+  border: 0;
   width: 100%;
   height: 100%;
 }
@@ -302,10 +299,10 @@ footer .socials img {
 }
 
 .submit-btn:hover {
-  background-color: #0b0f0d;
+  background-color: #525e58;
 }
 
-/* Employee Team Section Container */
+
 .team-section {
   border: 1px solid #f8f7f7;
   padding: 1.5rem;
